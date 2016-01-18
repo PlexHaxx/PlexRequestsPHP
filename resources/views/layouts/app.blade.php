@@ -51,6 +51,11 @@
                     PlexRequests
                 </a>
             </div>
+            @if (Session::has('user'))
+                <p class="navbar-text navbar-right">
+                    Yo, {{ Session::get('user') }}! <a class="btn btn-default btn-xs" href="/logout">Logout</a>
+                </p>
+            @endif
         </div>
     </nav>
     <div id="content" class="container">

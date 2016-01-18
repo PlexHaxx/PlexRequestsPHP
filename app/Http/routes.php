@@ -29,4 +29,9 @@ Route::group(['middleware' => ['web']], function () {
 
 	Route::resource('/', 'HomeController');
 
+	Route::get('logout', function() {
+		Session::flush();
+		return redirect('/');
+	});
+
 });
