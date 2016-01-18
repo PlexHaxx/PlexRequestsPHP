@@ -1,16 +1,8 @@
-<<<<<<< HEAD
 /vendor
 /node_modules
-Homestead.yaml
-Homestead.json
-.env
-=======
 vendor/
 node_modules/
 
-# Laravel 4 specific
-bootstrap/compiled.php
-app/storage/
 
 # Laravel 5 & Lumen specific
 bootstrap/cache/
@@ -18,4 +10,3 @@ storage/
 .env.*.php
 .env.php
 .env
->>>>>>> 06d32c993fd6abdb278c892ba39c5449ab75e7dc
