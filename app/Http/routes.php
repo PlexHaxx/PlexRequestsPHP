@@ -1,5 +1,7 @@
 <?php
 
+use GuzzleHttp\Exception\ClientException;
+
 /*
 |--------------------------------------------------------------------------
 | Routes File
@@ -11,9 +13,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 /*
 |--------------------------------------------------------------------------
@@ -27,5 +26,7 @@ Route::get('/', function () {
 */
 
 Route::group(['middleware' => ['web']], function () {
-    //
+
+	Route::resource('/', 'HomeController');
+
 });

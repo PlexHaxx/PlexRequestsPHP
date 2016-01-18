@@ -156,6 +156,10 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        MercurySeries\Flashy\FlashyServiceProvider::class,
+
+        Nathanmac\Utilities\Parser\ParserServiceProvider::class,
+
     ],
 
     /*
@@ -201,6 +205,9 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+
+        'Flashy'    => MercurySeries\Flashy\Flashy::class,
+        'Parser' => Nathanmac\Utilities\Parser\Facades\Parser::class,
 
     ],
 
